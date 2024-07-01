@@ -123,6 +123,7 @@ const search = (e) =>{
         if(data.total_results === 0){
             msg.innerText = `No result found for "${inputValue}"`
             msg.style.color = "rgb(204, 0, 0)";
+            result.style.display = "flex";
             } else {
                 msg.style.color = "white";
                 const result = document.getElementById("result")
