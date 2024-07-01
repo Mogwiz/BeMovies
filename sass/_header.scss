@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(20, 21, 23, 1);
+    font-family: $inria;
+    padding: 0px 12.5%;
+
+h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+    padding-top: 26px;
+
+    .BE {
+        color: rgba(204, 0, 0, 1);
+    }
+}
+
+.nav {
+    display: flex;
+    padding-top: 42px;
+
+    li a {
+        color: white;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-left: 29px;
+        transition: color 1s ease;
+        cursor: pointer;
+    }
+
+    li a:hover{
+        color: rgba(204, 0, 0, 1);
+    }
+}
+}

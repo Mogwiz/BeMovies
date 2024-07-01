@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeMovies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./sass/style.css"/>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><span class="BE">BE</span>MOVIES</h1>
+      <ul class="nav">
+        <li><a href="#search">SEARCH</a></li>
+        <li><a href="#latest">LATEST</a></li>
+        <li><a href="#category">GENRES</a></li>
+        <li><a id="regHeader">REGISTER</a></li>
+        <li><a id="signHeader">SIGNIN</a></li>
+      </ul>
+    </header>
+    <div class="container">
+    <div class="form"> <a name="search"></a>
+      <form action="" id="form">
+        <input type="text" id="search" placeholder="Search for a film...">
+        <button type="submit" id="button"><img src="./images/vector.png" alt="vector"></button>
+        </form>
+      </div>
+    <div id="result">
+      <h2 id="msg">Results for " "</h2>
+      <div class="resultSwiperContainer">
+      <div class="mySwiperResult swiper" id="searchSwiper">
+        <div class="swiper-wrapper" id="search-results">
+          <!-- <div class="swiper-slide"><img src="./images/test.jpg" alt=""></div> -->
+          <!-- Exemple pour le hover -->
+          <!-- <div class="rating">
+            <h1>The Godfather part III</h1>
+            <h2>1990</h2>
+            <p>Crime / Drama / Thriller</p>
+            <img src="./images/redstar.png" alt="">
+            <p id="noteHover">7.4</p>
+          </div> -->
+        </div>
+      </div>
+      <div class="resultButtonWrapper">
+      <div class="swiper-button-prev" id="firstPrev"><img src="./images/previous.png" alt=""></div>
+      <div class="swiper-button-next" id="firstNext"><img src="./images/next.png" alt=""></div>
+      </div>
+    </div>
+    </div>
+    <div class="latest"> <a name="latest"></a>
+      <h2 class="msg">Latest releases</h2>
+      <div class="latestSwiperContainer">
+      <div class="mySwiperLatest swiper">
+        <div class="swiper-wrapper" id="latest-results">
+          <!-- <div class="swiper-slide"><img src="./images/test.jpg" alt=""></div> -->
+          <!-- Exemple pour le hover -->
+          <!-- <div class="rating">
+            <h1>The Godfather part III</h1>
+            <h2>1990</h2>
+            <p>Crime / Drama / Thriller</p>
+            <img src="./images/redstar.png" alt="">
+            <p id="noteHover">7.4</p>
+          </div> -->
+        </div>
+      </div>
+      <div class="latestButtonWrapper">
+        <div class="swiper-button-prev"><img src="./images/previous.png" alt=""></div>
+        <div class="swiper-button-next"><img src="./images/next.png" alt=""></div>
+    </div>
+    </div>
+    </div>
+    <div class="category"> <a name="category"></a>
+      <h2 id="genre">Movies by genre</h2>
+      <ul id="genreList">
+        <li id="comedy">Comedy</li>
+        <li id="drame">Drame</li>
+        <li id="action">Action</li>
+        <li id="romance">Romance</li>
+        <li id="fantasy">Fantasy</li>
+        <li id="animation">Animation</li>
+      </ul>
+      <hr>
+    </div>
+      <div class="movies">
+      <h2 id="msgLi">Comedy</h2>
+      <div class="genresSwiperContainer">
+      <div class="mySwiperGenres swiper">
+        <div class="swiper-wrapper" id="genres-results">
+          <!-- <div class="swiper-slide"><img src="./images/test.jpg" alt=""></div> -->
+          <!-- Exemple pour le hover -->
+          <!-- <div class="rating">
+            <h1>The Godfather part III</h1>
+            <h2>1990</h2>
+            <p>Crime / Drama / Thriller</p>
+            <img src="./images/redstar.png" alt="">
+            <p id="noteHover">7.4</p>
+          </div> -->
+        </div>
+      </div>
+      <div class="genresButtonWrapper">
+        <div class="swiper-button-prev" id="firstPrev"><img src="./images/previous.png" alt=""></div>
+        <div class="swiper-button-next" id="firstNext"><img src="./images/next.png" alt=""></div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div id="popup">
+    <img id="popupClose" src="./images/xClose.png" alt="closeicon">
+    <div class="popupcontainer">
+    <ul>
+      <li id="first">SIGNUP</li>
+      <li id="second">LOGIN</li>
+    </ul>
+    <div id="popupContainer">
+      <div class="popupLogin">
+      <!-- Form login -->
+      <!-- <form action="">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <br>
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+        <br>
+        <button type="submit" id="buttonLogin">LOGIN</button>
+        <p id="forgot">I forgot my password</p>
+        <p id="member">Not a member yet ? <span id="spanRegister">Sign up</span></p>
+      </form> -->
+      <!-- Form register -->
+      <!-- <form action="">
+        <input type="text" id="username" placeholder="Username">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <input type="password" id="confirmPassword" placeholder="Confirm password">
+        <br>
+        <button type="submit" id="buttonRegister">REGISTER</button>
+      </form> -->
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- Exemple pour le popup quand on appuie sur le film -->
+  <!-- <div class="popupMovie">
+    <img class="close" src="./images/xClose.png" alt="">
+    <div class="popupMovieContainer">
+      <img class="affiche" src="./images/test.jpg" alt="">
+      <h2 id="title">THE GODFATHER</h2>
+      <h3 id="year">1972</h3>
+      <div class="note">
+        <img class="redstar" src="./images/redstar.png" alt="">
+        <p>8.7</p>
+      </div>
+      <h3 id="popupGenre">CRIME / DRAMA</h3>
+      <p id="bio">Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.</p>
+      <p id="cast"><span>CAST:</span> Marlon Brando, Al Pacino, James Caan, Robert Duvall</p>
+    </div>
+  </div> -->
+  <footer>
+    <h1><span class="BE">BE</span>MOVIES</h1>
+    <ul class="nav">
+      <li><a href="#search">SEARCH</a></li>
+      <li><a href="#latest">LATEST</a></li>
+      <li><a href="#category">GENRES</a></li>
+      <li><a id="regFooter">REGISTER</a></li>
+      <li><a id="signFooter">SIGNIN</a></li>
+    </ul>
+    <p id="rights">@2023 - All rights reserved</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
